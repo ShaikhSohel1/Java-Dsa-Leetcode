@@ -1,7 +1,10 @@
 package stringBuilders;
 
+
 public class StoringString {
+
     public static void main(String[] args) {
+
 //        String name = "Sohel Shaikh";
 //        String naam = "Sohel Shaikh";
 //
@@ -20,11 +23,17 @@ public class StoringString {
 //        System.out.println(name.hashCode());
 
         String name = "Java";
+        String newName ;
 
         for (int i = 0; i < name.length()-1; i++) {
+
             System.out.println(name.charAt(i));
         }
-
+        newName = new String(name);
+        System.out.println(newName.hashCode()+ ":" + name.hashCode());
+        System.out.println(newName+""+ name);
+        System.out.println(newName == name);
+        System.out.println(newName.equals(name));
 
     }
 }
