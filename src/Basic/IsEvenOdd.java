@@ -20,7 +20,7 @@ public class IsEvenOdd {
 
         String string1 ="Good Software like wine needs time";
         int count;
-        char string[]= string1.toCharArray();
+        char[] string= string1.toCharArray();
         for (int i = 0; i < string.length; i++) {
             count =1;
             for (int j = i+1; j < string.length; j++) {
